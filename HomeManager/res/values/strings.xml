@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Home Manager</string>
+   	<string name="uninstall_button">Uninstall</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_defaults">To change your default launcher you must clear the defaults of the current launcher.
+        						  Tap the "Clear Defaults" button and then press back.</string>		  
+    <string name="get_more_launchers">Home Manager app is only useful if you have more than one launcher
+        							  intstalled on your device. Installing launhcers is the simplest
+        							  way to change the appearance of your android os. In the Google Play
+        							  Store there is a wide selection of launchers to choose from. Go 
+        							  ahead and try one, and then come back to this app for a better
+        							  experience.</string>
+
+</resources>
