@@ -1,10 +1,8 @@
 package com.droidz.homemanager;
 
 import java.util.List;
-
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,7 +12,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-
 import com.droidz.homemanager.R;
 
 public class HomeManagerListAdapter extends ArrayAdapter<Launcher> {
@@ -82,17 +79,11 @@ public class HomeManagerListAdapter extends ArrayAdapter<Launcher> {
 			public void onClick(View v) {
 				if(selectedViewHolder != null) {
 					ViewHolder currentViewHolder = (ViewHolder)((View)v.getParent()).getTag(); 
-					if(selectedViewHolder.index != currentViewHolder.index)
+					if(selectedViewHolder.index != currentViewHolder.index) {
 						homeManager.showClearDefaultsDialog(selectedViewHolder.packageName);
+						((RadioButton) v).setChecked(false);
+					}
 				}
-				else {
-					Intent launchHome = new Intent(Intent.ACTION_MAIN);
-		    		launchHome.addCategory(Intent.CATEGORY_HOME);
-		    	
-		    		context.startActivity(launchHome);
-				}
-				
-	    		((RadioButton) v).setChecked(false);
 			}
 		});
 		
