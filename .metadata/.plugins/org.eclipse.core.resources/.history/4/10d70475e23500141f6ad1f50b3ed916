@@ -84,8 +84,6 @@ public class HomeManagerListAdapter extends ArrayAdapter<Launcher> {
 					ViewHolder currentViewHolder = (ViewHolder)((View)v.getParent()).getTag(); 
 					if(selectedViewHolder.index != currentViewHolder.index)
 						homeManager.showClearDefaultsDialog(selectedViewHolder.packageName);
-					else
-						return;
 				}
 				else {
 					Intent launchHome = new Intent(Intent.ACTION_MAIN);
@@ -94,7 +92,7 @@ public class HomeManagerListAdapter extends ArrayAdapter<Launcher> {
 		    		context.startActivity(launchHome);
 				}
 				
-	    		((RadioButton) v).setChecked(false);
+	    		//((RadioButton) v).setChecked(false);
 			}
 		});
 		
