@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Home Manager</string>
+    <string name="uninstall_button">Uninstall</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_defaults">To change your default launcher you must clear the defaults of the current launcher.
+        						  Tap the "Clear Defaults" button and then tap return.</string>
+
+</resources>

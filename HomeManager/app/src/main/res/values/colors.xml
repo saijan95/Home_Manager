@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#3f51b5</color>
+    <color name="primaryColorDark">#283593</color>
+    <color name="windowBackgroundColor">#212121</color>
+    <color name="selectedAccentColor">#FFBB33</color>
+    <color name="deselectedAccentColor">#FAFAFA</color>
+</resources>
